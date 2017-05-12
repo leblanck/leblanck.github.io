@@ -1591,3 +1591,11 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+
+
+
+		@media (max-width: 400px) {
+			.cruxLogo {
+				width: 50px;
+			}
+		}
