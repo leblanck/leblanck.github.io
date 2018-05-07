@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    Font-Family: 'Overpass', Sans-Serif;
+}
+
+*::selection {
+  background: #EFEB63
+}
+
+*::-moz-selection {
+  background: #EFEB63;
+}
+
+.menu-container {
+  color: #323031;
+  background-color: #FBFCFD;
+  padding: 20px 10px 10px 20px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/geometry2.png');
+}
+
+.menu-container .links  a {
+  border-bottom: 4px solid #EFEB63;
+  text-decoration: none;
+  color: #323031;
+  padding-bottom: -5px;
+}
+
+
+.menu {
+  border: 1px solid #FBFCFD;  /* For debugging */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  padding: 20px;
+  color: #191919;
+  background-image: url('../images/geometry2.png');
+  display: flex;
+  justify-content: center;
+
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container .header .logo .logo-image {
+  width: 400px;
+}
+
+.header-container .header .text {
+  max-width: 800px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.header-container .header .text a {
+  border-bottom: 4px solid #EFEB63;
+  text-decoration: none;
+  color: #323031;
+  padding-bottom: -5px;
+}
+
+.type-grid-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.type-grid-container .about-container {
+  min-height: 1500px;
+}
+
+.type-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.type-grid-item {
+  min-width: 400px;
+  min-height: 200px;
+  color: #EFEB63;
+  padding: 20px;
+  flex: 1;
+}
+
+
+.type-grid-container .type-grid .first-item {
+  background-color: #177E89;
+}
+
+.type-grid-container .type-grid .first-item .type-item-header {
+  Font-Family: 'Vollkorn', Serif;
+  font-style: italic;
+  Font-Size: 38px;
+}
+.type-grid-container .type-grid .first-item .type-item-body {
+  Font-Family: 'Raleway', Sans-Serif;
+  Font-Size: 18px;
+}
+
+.type-grid-container .type-grid .second-item {
+  background-color: #084C61;
+}
+
+.type-grid-container .type-grid .second-item .type-item-header {
+  Font-Family: 'Permanent Marker', Cursive;
+  Font-Size: 48px;
+}
+
+.type-grid-container .type-grid .second-item .type-item-body {
+  Font-Family: 'Overpass', Sans-Serif;
+  Font-Size: 17px;
+}
+
+.type-grid-container .type-grid .third-item {
+  background-color: #DB3A34;
+}
+
+.type-grid-container .type-grid .third-item .type-item-header {
+  Font-Family: 'Old Standard TT', Serif;
+  font-style: italic;
+  Font-Size: 48px;
+}
+
+.type-grid-container .type-grid .third-item .type-item-body {
+  Font-Family: 'Rubik', Sans-Serif;
+  Font-Size: 18px;
+}
+
+
+.type-grid-container .type-grid .fourth-item {
+  background-color: #177E89;
+}
+
+.type-grid-container .type-grid .fourth-item .type-item-header {
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 42px;
+}
+
+.type-grid-container .type-grid .fourth-item .type-item-body {
+  Font-Family: 'Lato', Sans-Serif;
+  margin-top: 5px;
+  Font-Size: 18px;
+}
+
+.type-grid-container .type-grid .fifth-item {
+  background-color: #084C61;
+}
+
+.type-grid-container .type-grid .fifth-item .type-item-header {
+  Font-Family: 'Oxygen', Sans-Serif;
+  font-weight: 300;
+  Font-Size: 28px;
+}
+
+.type-grid-container .type-grid .fifth-item .type-item-body {
+  Font-Family: 'Noto Serif', Serif;
+  Font-Size: 18px;
+}
+
+.type-grid-container .type-grid .sixth-item {
+  background-color: #DB3A34;
+}
+
+.type-grid-container .type-grid .sixth-item .type-item-header {
+  Font-Family: 'Oswald', Sans-Serif;
+  Font-Size: 28px;
+}
+
+.type-grid-container .type-grid .sixth-item .type-item-body {
+  Font-Family: 'Quattrocento', Serif;
+  Font-Size: 18px;
+}
+
+.type-grid-container .type-grid .seventh-item {
+  background-color: #177E89;
+}
+
+.type-grid-container .type-grid .seventh-item .type-item-header {
+  Font-Family: 'Unica One', Cursive;
+  Font-Size: 28px;
+}
+
+.type-grid-container .type-grid .seventh-item .type-item-body {
+  Font-Family: 'Crimson Text', Serif;
+  Font-Size: 20px;
+}
+
+.type-grid-container .type-grid .last-item {
+  background-color: #084C61;
+}
+
+.type-grid-container .type-grid .last-item .type-item-header {
+  Font-Family: 'Istok Web', Sans-Serif;
+  Font-Size: 32px;
+}
+
+.type-grid-container .type-grid .last-item .type-item-body {
+  margin-top: 5px;
+  Font-Family: 'Average', Serif;
+  Font-Size: 18px;
+}
+
+.type-grid-container .type-grid .type-grid-item .type-item-desc {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ECEEF0;
+}
+
+.type-grid-container .type-grid .about {
+  text-align: center;
+  color: #323031;
+  max-width: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 500px;
+}
+
+.type-grid-container .type-grid .about  a {
+  border-bottom: 4px solid #EFEB63;
+  text-decoration: none;
+  color: #323031;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #323031;
+  background-image: url('../images/geometry2.png');
+}
+
+.footer-item {
+  min-height: 100px;
+  text-align: center;
+  flex: 1;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.footer-item  a {
+  border-bottom: 4px solid #EFEB63;
+  text-decoration: none;
+  color: #323031;
+  padding-bottom: -5px;
+}
+
+.footer-item  .footer-emoji img {
+  width: 55px;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 375px){
+  .header-container .header .logo .logo-image {
+    width: 200px;
+  }
+  .type-grid-item {
+    min-width: 200px;
+  }
+  .type-grid-container .type-grid .about {
+    min-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px){
+  .header-container .header .logo .logo-image {
+    width: 300px;
+  }
+  .type-grid-item {
+    min-width: 350px;
+  }
+  .type-grid-container .type-grid .about {
+    min-height: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .header-container .header .logo .logo-image {
+    width: 400px;
+  }
+}
