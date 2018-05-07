@@ -34,7 +34,6 @@ html, body {
 
 
 .menu {
-  border: 1px solid #FBFCFD;  /* For debugging */
   width: 900px;
   display: flex;
   justify-content: space-between;
