@@ -52,7 +52,7 @@ spectacleInstall() {
 }
 
 slackInstall() {
-  SLACK=/Applications/Spectacle.app/
+  SLACK=/Applications/Slack.app/
 
   echo "`date` Installing Slack..."
   brew cask install slack
