@@ -1,4 +1,6 @@
-
+#@@@@ TO DO @@@@
+# Add Wireshark/Adobe CC for apps
+# edit logging func to run as sudo, homebrew CANNOT run as sudo
 ###########
 # Logging #
 ###########
