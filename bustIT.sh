@@ -1,15 +1,32 @@
-#@@@@ TO DO @@@@
-# Add Wireshark/Adobe CC for apps
-# edit logging func to run as sudo, homebrew CANNOT run as sudo
+#################################
+# Created by @kyleblanc         #
+# -Used to setup new macOS      #
+#   environment using homebrew. #
+#   App WishList is located     #
+#   below this description.     #
+#                               #
+#   Last Update: 11/26/18       #
+#################################
+# Cask WishList               #
+#   -Clipy                    #
+#   -Messenger                #
+#   -WireShark                #
+#   -Adobe CC                 #
+#  Cask list available using: #
+#     brew search --casks     #
+###############################
+
+#@@@@@@@@@@@@ MAIN @@@@@@@@@@@@
+
 ###########
 # Logging #
 ###########
 LogFile="/Library/Logs/bustIT.log"
 if [[ ! -e $LogFile ]]; then
-    touch $LogFile && exec >> $LogFile
+    sudo touch $LogFile && exec >> $LogFile
     echo "`date` ========== Log File Created"
 else
-    exec >> $LogFile
+    sudo exec >> $LogFile
 fi
 
 atomInstall() {
