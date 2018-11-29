@@ -1,26 +1,23 @@
+#!/bin/bash
 #################################
 # Created by @kyleblanc         #
 # -Used to setup new macOS      #
 #   environment using homebrew. #
-#   App WishList is located     #
+#   Cask WishList is located    #
 #   below this description.     #
 #                               #
-#   Last Update: 11/26/18       #
+#   Last Update: 11/29/18       #
 #################################
 # Cask WishList               #
-#   -Clipy                    #
-#   -Messenger                #
-#   -WireShark                #
-#   -Adobe CC                 #
+#                             #
+#                             #
 #  Cask list available using: #
 #     brew search --casks     #
 ###############################
 
 #@@@@@@@@@@@@ MAIN @@@@@@@@@@@@
 
-###########
-# Logging #
-###########
+# LOG ##########################################
 LogFile="/Library/Logs/bustIT.log"
 if [[ ! -e $LogFile ]]; then
     sudo touch $LogFile && exec >> $LogFile
@@ -28,59 +25,47 @@ if [[ ! -e $LogFile ]]; then
 else
     sudo exec >> $LogFile
 fi
+###############################################
 
-atomInstall() {
-  ATOM=/Applications/Atom.app/
+caskInstaller() {
+  declare -a casks=("spectacle" "wireshark" "clipy" "atom" "slack" "adobe-creative-cloud" "messenger")
+  atomTrigger="atom"
+  adobeTrigger="adobe-creative-cloud"
 
-  echo "`date` Installing Atom..."
-  brew cask install atom
-  sleep 5
-  if [ ! -d "$ATOM" ]; then
-    echo "`date` " $ATOM "was not installed succesfully!"
-  else
-    echo "`date` "  $ATOM "installed!"
-    #Install Atom Themes
-    echo "`date` Installing Atom themes.."
-    apm install apple-wwdc-2016-syntax
-    apm install firewatch-syntax
-    apm install halcyon-syntax
-
-    #Install Atom Packages
-    echo "`date` Installing Atom packages..."
-    apm install file-icons
-    apm install minimap
-    apm install pigments
-
-    #CLI Tools
-    echo "`date` Installing Atom CLI Tools..."
-    ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
-  fi
+  for i in "${casks[@]}"
+  do
+    if [ "$i" == "$atomTrigger" ]; then
+      echo "`date` Installing from trigger" $i"..."
+      brew cask install $i
+      atomExtras
+    elif [ "$i" == "$adobeTrigger" ]; then
+      echo "`date ` Installing from trigger2" $i"..."
+      brew cask install $1
+      sleep 5
+      open -a /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
+    else
+      echo "`date` Installing" $i"..."
+      brew cask install $i
+    fi
+  done
 }
 
-spectacleInstall() {
-  SPECTACLE=/Applications/Spectacle.app/
+atomExtras() {
+  #Install Atom Themes
+  echo "`date` Installing Atom themes.."
+  apm install apple-wwdc-2016-syntax
+  apm install firewatch-syntax
+  apm install halcyon-syntax
 
-  echo "`date` Installing Spectacle..."
-  brew cask install spectacle
+  #Install Atom Packages
+  echo "`date` Installing Atom packages..."
+  apm install file-icons
+  apm install minimap
+  apm install pigments
 
-  if [ ! -d "$SPECTACLE" ]; then
-    echo "`date` " $SPECTACLE "was not installed succesfully!"
-  else
-    echo "`date` "  $SPECTACLE "installed!"
-  fi
-}
-
-slackInstall() {
-  SLACK=/Applications/Slack.app/
-
-  echo "`date` Installing Slack..."
-  brew cask install slack
-
-  if [ ! -d "$SLACK" ]; then
-    echo "`date` " $SLACK "was not installed succesfully!"
-  else
-    echo "`date` "  $SLACK "installed!"
-  fi
+  #CLI Tools
+  echo "`date` Installing Atom CLI Tools..."
+  ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
 }
 
 homebrewInstall() {
@@ -91,11 +76,8 @@ homebrewInstall() {
   brew tap homebrew/cask
   sleep 5
   echo "`date` Installing Apps..."
-  slackInstall
+  caskInstaller
   sleep 5
-  spectacleInstall
-  sleep 5
-  atomInstall
   echo "`date` Done!"
 }
 
