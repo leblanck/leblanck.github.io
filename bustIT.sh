@@ -6,9 +6,9 @@
 #   Cask WishList is located    #
 #   below this description.     #
 #                               #
-#   Last Update: 11/29/18       #
+#   Last Update: 01/22/19       #
 #################################
-# Cask WishList               #
+# Cask WishList/To Do         #
 #                             #
 #                             #
 #  Cask list available using: #
@@ -28,22 +28,28 @@ fi
 ###############################################
 
 caskInstaller() {
-  declare -a casks=("spectacle" "wireshark" "clipy" "atom" "slack" "adobe-creative-cloud" "messenger")
+  # This will iterate through cask installs, only stopping when a trigger is hit to execute
+  # additional commands for that specific installer.
+  # To add additional casks, add them into $casks array.
+  declare -a casks=("spectacle" "wireshark" "clipy" "atom" "slack" "adobe-creative-cloud" "messenger" "dropbox" "xnviewmp" "fliqlo")
   atomTrigger="atom"
   adobeTrigger="adobe-creative-cloud"
 
   for i in "${casks[@]}"
   do
     if [ "$i" == "$atomTrigger" ]; then
-      echo "`date` Installing from trigger" $i"..."
+      #Triggered when current cask = Atom
+      echo "`date` Installing" $i"..."
       brew cask install $i
       atomExtras
     elif [ "$i" == "$adobeTrigger" ]; then
-      echo "`date ` Installing from trigger2" $i"..."
+      #Triggered when current cask = Adobe CC
+      echo "`date ` Installing" $i"..."
       brew cask install $1
       sleep 5
       open -a /usr/local/Caskroom/adobe-creative-cloud/latest/Creative\ Cloud\ Installer.app
     else
+      #All other casks
       echo "`date` Installing" $i"..."
       brew cask install $i
     fi
