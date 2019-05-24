@@ -24,7 +24,7 @@
 html,
 body {
     height: 100%;
-    margin: 20px;
+    margin: 10px;
     font-family: "system";
     font-size: 15px;
 }
@@ -43,7 +43,7 @@ body {
   .header-wrapper {
       display: flex;
       flex-flow: column;
-      margin: 0px 0px 100px 0px;
+      margin: 0px 0px 75px 0px;
       padding: 10px;
       align-items: flex-start;
   }
@@ -162,6 +162,7 @@ button {
       justify-content: space-evenly;
       align-items: center;
       margin-bottom: 50px;
+      padding-right: 25px;
   }
   
   .about-text {
@@ -186,11 +187,16 @@ button {
       color: #e684ae;
       margin-left: 25px;
   }
+
+  .resume-button{
+      margin-bottom: 15px;
+      width: 100px;
+  }
   
   
   /** Need to change image **/
   ul {
-      list-style-image: url(img/arrow.svg);
+      list-style-image: url(img/arrow.png);
       list-style-type: disc;
       font-family: "Inconsolata", monospace;
       margin: 0px 40px 20px 0px;
@@ -232,6 +238,8 @@ button {
   
     .link-icon {
         margin-left: 10px;
+        transition: 0.4s ease-out;
+
     }
 
     .link-icon:hover {
@@ -240,6 +248,8 @@ button {
 
   .github-icon {
       margin-left: auto;
+      transition: 0.4s ease-out;
+
   }
   
   .github-icon:hover {
@@ -297,7 +307,26 @@ button {
       flex-flow: column;
       align-items: center;
       padding: 20px;
+      margin-bottom: 45px;
       font-family: "system";
+  }
+
+  .social-links {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+
+  .social-icon-logo:hover {
+      fill: #e684ae;
+  }
+
+  .social-icon-logo {
+      fill: #666;
+      width: 25px;
+      padding: 5px;
+      transition: 0.4s ease-out;
   }
   
   .code {
@@ -309,8 +338,35 @@ button {
       font-family: "Inconsolata", monospace;
       color: #e684ae;
   }
-  
-    
+
+  .copy {
+      font-size: 50%;
+      color: #666;
+      margin-top: 20px;
+  }
+
+
+  .text-link {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #666;
+	padding: 2px 3px;
+	-webkit-box-shadow: inset 0 -3px 0 #c8eae9;
+	box-shadow: inset 0 -3px 0 #c8eae9;
+}
+
+.text-link:hover {
+	-webkit-box-shadow: inset 0 -33px 0 0 #c8eae9;
+	box-shadow: inset 0 -33px 0 0 #c8eae9;
+	color: #fff;
+}
+
+
+
+
+
+
 /** MEDIA QUERIES **/
   @media screen and (max-width: 700px) {
 
@@ -329,6 +385,9 @@ button {
     .header-wrapper p {
         max-width: 80%;
     }
+    h3 {
+        margin-left: -20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -341,5 +400,32 @@ button {
     }
     .header-intro {
         font-size: 30px;
+    }
+
+    .about-text{
+        max-width: 80%;
+    }
+
+    h3 {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    hr {
+        width: 90px;
+    }
+
+    .about-img {
+        width: 200px;
+    }
+    .header-wrapper {
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .proj-container{
+        width: 200px;
     }
 }
