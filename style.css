@@ -87,6 +87,7 @@ button {
       font-family: "Iconsolata", monospace;
       border-radius: 3px;
       color: #e684ae;
+      cursor: pointer;
   }
   
   button:hover {
