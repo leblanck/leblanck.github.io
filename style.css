@@ -88,6 +88,7 @@ button {
       border-radius: 3px;
       color: #e684ae;
       cursor: pointer;
+      transition: 0.4s ease-out;
   }
   
   button:hover {
@@ -240,7 +241,6 @@ button {
     .link-icon {
         margin-left: 10px;
         transition: 0.4s ease-out;
-
     }
 
     .link-icon:hover {
@@ -250,7 +250,6 @@ button {
   .github-icon {
       margin-left: auto;
       transition: 0.4s ease-out;
-
   }
   
   .github-icon:hover {
