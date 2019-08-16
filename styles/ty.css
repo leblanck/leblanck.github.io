@@ -1,0 +1,55 @@
+:root {
+    --red: #D14938;
+    --tan: #F5E7CF;
+    --blue: #2E323D;
+    --white: #ECEBEB;
+}
+
+::selection {
+    background: var(--red);
+    color: var(--tan);
+}
+::-moz-selection {
+    background: var(--red);
+    color: var(--tan);
+}
+
+@font-face { 
+	font-family: 'BrandFont';
+	src: url('./typeface/bouquet-webfont.woff2');
+	src: url('./typeface/bouquet-webfont.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'TypeWriter';
+    src: url('./typeface/museo-slab-300.woff2');
+}
+
+body  {
+    margin: 0;
+    background-color: var(--red);
+    background-image: url('../img/texture.png');
+    background-repeat: repeat;
+    color: var(--blue);
+    /* background-attachment: fixed; */
+    font-family: 'TypeWriter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-thanks-wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+h1 {
+    color: var(--tan);
+    font-family: 'BrandFont', sans-serif;
+}
