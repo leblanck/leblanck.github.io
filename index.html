@@ -1,376 +1,256 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <title>Kyle LeBlanc - Front-End Developer from New England</title>
-        <meta charset="UTF-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="icon" type="image/png" href="" hreflang="en-us">
-        <meta property="og:title" content="Kyle LeBlanc | Front-End Developer">
-        <meta property="og:description" content="Front-End Developer from New England">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://kyleblanc.dev">
-        <meta property="og:site_name" content="Kyle LeBlanc">
-        <meta property="og:image:width" content="1280">
-        <meta property="og:image:height" content="800">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:locale" content="en_US">
-        <meta name="description" content="l interfaces and experiences">
-        <meta name="keywords" content="design, development, web, leblanck, kyle, leblanc, css, new-england">
-        <meta itemprop="name" content="Kyle LeBlanc | Front End Software Engineer">
-        <meta itemprop="description" content="Front-End Developer from New England">
-        <meta itemprop="image" content="https://brittanychiang.com/img/og.png">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="https://leblanck.github.io/">
-        <meta name="twitter:site" content="@kyleblanc">
-        <meta name="twitter:creator" content="@kyleblanc">
-        <meta name="twitter:title" content="Kyle LeBlanc | Front End Software Engineer">
-        <meta name="twitter:description" content="Design-minded front-end software engineer focused on building beautiful interfaces and experiences">
-        <meta name="twitter:image:src" content="https://brittanychiang.com/img/og.png">
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="img/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="&nbsp;"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="img/mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="js/parallax.js"></script>
+        <script src="https://kit.fontawesome.com/935f01cd68.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
     </head>
     <body>
-            <div class="header-wrapper">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="nav-bar">
+                <ul class="main-nav">
+                    <li><a data-scroll class="link" href="#home">Home</a></li>
+                    <li><a class="link" href="#work">Work</a></li>
+                    <li class="center-logo"><a href="index.html"><img src="img/KLFlag.png" /></a></li>
+                    <li><a class="link" href="#about">About</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
+                </ul>
+                <div id="home"></div>
+            </div>
+            <div class="hero-text">
+                    <h1>I'm a Front-End Developer<sup>(Jr.)</sup> and I build things for the web.</h1>
+                    <h3>I'm an <span class="strike">IT Engineer</span> developer based out of New England specializing in building high-quality websites and applications.</h3>
+            </div>
+            <div id="hero">
+                <div class="layer layer-01" data-type="parallax" data-depth="0.50"></div>
+                <div class="layer layer-02" data-type="parallax" data-depth="0.70"></div>
+                <div class="layer layer-03" data-type="parallax" data-depth="0.80"></div>
+                <div class="layer layer-04" data-type="parallax" data-depth="1"></div>
+            </div>
+        </header>
+        <main>
+            <div class="section def-color work">
+                    <div id="work"></div>
 
-                    <p class="header-intro-small">Hi, my name is</p>
-                    <p class="header-intro">
-                
-                        <b>Kyle LeBlanc.</b><br>
-                        <span class="header-intro-text">I'm a <ins1>Front-End Developer<sup>(Jr.)</sup></ins1>
-                        and I build things for the web.</span>
-                    </p>
-                
-                    <p class="header-desc">
-                        I'm an
-                        <del1>IT Engineer</del1> developer based out of New England specializing in building high-quality websites and applications. &#X1F389;
-                
-                    </p>
-                            <button onclick="location.href='mailto:hello@kyleblanc.com';">Get in Touch</button>
-                
-                </div>
-                
-                
-                
+                    <img src="img/W&D.png" class="work-image" />
+                    <h2>Work</h2>
+                    <div class="tiles">
+                        <div class="project">
+                            <div class="project-icon">
+                                <img src="img/arrow.png" class="arrow-icon" />
+                                <a href="" class="proj-link"><span class="fab fa-github fa-2x"></span></a>
+                                <a href="https://codepen.io/leblanck/full/RmYONB" class="proj-link"><span class="fas fa-link fa-2x"></span></a>
+                            </div>
+                            <div class="project-text">
+                                <h4>Conference Room Check</h4>
+                                <h6>2019</h6>
+                                <p>
+                                        Conference Room Check was created to visually ease the woes of finding an available conference room in the busy modern office.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <ul class="project-tech-list">
+                                    <li>JavaScript</li>
+                                    <li>Google App Script</li>
+                                    <li>GSuite API</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-icon">
+                                <img src="img/arrow.png" class="arrow-icon" />
+                                <a href="https://github.com/leblanck/Pinwheel" class="proj-link"><span class="fab fa-github fa-2x"></span></a>
+                                <a href="https://pinwheel.dev/" class="proj-link"><span class="fas fa-link fa-2x"></span></a>
+                            </div>
+                            <div class="project-text">
+                                <h4>Pinwheel</h4>
+                                <h6>2019</h6>
+                                <p>
+                                        Pinwheel is a side blog dedicated to macOS enterprise infrastructure created with Hugo and hosted on Firebase.
+                                 </p>
+                            </div>
+                            <div class="project-tech">
+                                <ul class="project-tech-list">
+                                    <li>Hugo</li>
+                                    <li>Firebase</li>
+                                    <li>JavaScript</li>
+                                   <li>HTML</li>
+                                    <li>CSS</li>
+                                 </ul>
+                            </div>     
+                        </div>
+                        <div class="project">
+                                    <div class="project-icon">
+                                            <img src="img/arrow.png" class="arrow-icon" />
+                                            <a href="https://github.com/leblanck/ReactResume" class="proj-link"><span class="fab fa-github fa-2x"></span></a>
+                                            <a href="http://kyleblanc.dev/ReactResume/" class="proj-link"><span class="fas fa-link fa-2x"></span></a>
+                                        </div>
+                                        <div class="project-text">
+                                            <h4>React Resume</h4>
+                                            <h6>2018</h6>
+                                            <p>
+                                                An online version of my resume I made for fun. I was interested in learning React.js - I probably didn't need to use React at all, but hey, at least I learned a few things!
+                                            </p>
+                                        </div>
+                                        <div class="project-tech">
+                                            <ul class="project-tech-list">
+                                                <li>Rect</li>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                            <li>Git</li>
+                                            </ul>
+                                        </div>     
+                                    </div>
+
+                        <div class="project">
+                                <div class="project-icon">
+                                        <img src="img/arrow.png" class="arrow-icon" />
+                                        <a href="https://github.com/leblanck/TypePear" class="proj-link"><span class="fab fa-github fa-2x"></span></a>
+                                        <a href="https://kyleblanc.dev/TypePear/" class="proj-link"><span class="fas fa-link fa-2x"></span></a>
+                                    </div>
+                                    <div class="project-text">
+                                        <h4>Type Pear</h4>
+                                        <h6>2017</h6>
+                                        <p>
+                                                Type Pear was created as a reference to showcase some of the best, and most popular, font pairings (or 'pearings' if you will) that are available from Google Fonts.                                         </p>
+                                    </div>
+                                    <div class="project-tech">
+                                        <ul class="project-tech-list">
+                                            <li>CSS</li>
+                                            <li>HTML</li>
+                                            <li>Git</li>
+                                           <li>Google Fonts</li>
+                                         </ul>
+                                    </div>     
+                                </div>
+                                <div class="project">
+                                        <div class="project-icon">
+                                                <img src="img/arrow.png" class="arrow-icon" />
+                                                <a href="https://github.com/leblanck/olitoki.github.io" class="proj-link"><span class="fab fa-github fa-2x"></span></a>
+                                                <a href="http://olitoki.com/" class="proj-link"><span class="fas fa-link fa-2x"></span></a>
+                                            </div>
+                                 <div class="project-text">
+                                                <h4>OliToki</h4>
+                                                <h6>2017</h6>
+                                                <p>
+                                                        
+                                                    OliToki is a Korean-Fusion restaurant in the heart of Allston, MA. I was granted the opportunity to have full control over the branding, logo, and website development/design.            
+                                                </p>                                
+                                </div>
+                                <div class="project-tech">
+                                        <ul class="project-tech-list">
+                                                <li>CSS</li>
+                                                <li>HTML</li>
+                                                <li>Git</li>
+                                               <li>JavaScript</li>
+                                             </ul>
+                                        </div>   
+                                </div>     
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
 
 
-<!-- ABOUT SECTION-->
+                    
 
-        <h3><span class="num">01.</span>About Me</h3><hr>
-            <div class="about-wrapper">
-                <div class="about-text">
-                    <p>
-                        Hello! My name is Kyle and I'm a front-end developer from New England. I love to build responsive and pixel-perfect things that live on the web. 
-                    </p>
-                        <p>I'm an ex-IT Engineer with a bachelors in Computer Networking from <a class="text-link" href="https://wit.edu">Wentworth Insitute of Technology.</a> I've worked in various industries including healthcare IT, e-commerce, and advertising.
-                    </p>
+            </div>
+            <div class="section alt-color about">
+                    <div id="about"></div>
+                    <img src="img/Handshake.png" class="about-image" />
+                    <h2>About</h2>
+                    <p> Hello! My name is Kyle and I'm a front-end developer from New England. I love to build responsive and 
+                        pixel-perfect things that live on the web.</p>
+
+                    <p>I'm an ex-IT Engineer with a bachelors in Computer Networking from <a class="text-link" href="https://wit.edu">Wentworth Insitute of Technology.</a> 
+                    I've worked in various industries including healthcare IT, e-commerce, and advertising.</p>
+
                     <button class="resume-button" onclick="location.href='Resume-KL.pdf';">Resume</button>
                     <p> Some recent technologies I've been using: </p>
                         <div class="about-lists">
-                            <ul>
-                                <li>ES6</li>
-                                <li>SASS</li>
-                                <li>React.js</li>
-                                <li>Dropbox API</li>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>ES6</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>SASS</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>React.js</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Dropbox API</li>
                             </ul>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>Gulp & Browserify</li>
-                                <li>D3.js</li>
-                                <li>Bash</li>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>HTML5</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Gulp & Browserify</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>D3.js</li>
+                                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Bash</li>
                             </ul>
-                        </div>
+                    </div>
+
+
+            </div>
+            <div class="section def-color contact">
+                    <div id="contact"></div>
+                    <img src="img/Email.png" class="contact-image" />
+                <h2>Contact</h2>
+                <form name="input" method="POST" action="https://formspree.io/hello@kyleblanc.dev">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="Name">
+                    </div>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="_replyto">
+                    </div>
+                     <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="Message"></textarea>
+                    </div>
+                    <div class="button">
+                            <button type="submit">Send your message</button>
+                    </div>
+                    <input type="hidden" name="_next" value="https://kyleblanc.dev/thanks.html"/>
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content-wrapper">
+                <div class="footer-left">
+                    <h2><a href="mailto:hello@kyleblanc.dev">hello@kyleblanc.dev</a></h2>
+                    <div class="social">
+                        <a href="https://github.com/leblanck"><span class="fab fa-github fa-lg"></span></a>
+                        <a href="https://www.instagram.com/kyleblanc/"><span class="fab fa-instagram fa-lg"></span></a>
+                        <a href="https://codepen.io/leblanck/"><span class="fab fa-codepen fa-lg"></span></a>
+                        <a href="https://www.linkedin.com/in/leblanck/"><span class="fab fa-linkedin fa-lg"></span></a>
+                    </div>
+                    <span class="code">curl kyleblanc.dev/me/</span>
+                    <span class="copy">&copy; 2019 Kyle LeBlanc</span>
                 </div>
-            <div class="img-holder">
-              <img class="about-img" src="img/self.jpg" width="300px" alt="">
-            </div>
-        </div>
-
-
-<!-- PROJECT TILES -->
-
-<h3><span class="num">02.</span>Projects</h3><hr>
-<div class="proj-wrapper">
-    
-    
-            <div class="border-module">
-        <div class="projContainer">
-            <div class="proj-icons">
-                <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                     <a href="https://github.com/leblanck/" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>
-    <a href="https://codepen.io/leblanck/full/RmYONB"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-                <g>
-                    <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-                    <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-                </g>
-                </svg>
-            </a>            
-</div>
-            <div class="proj-text">
-                <h4>Comference Room Check</h4>
-                <h6>2019</h6>
-                <p>Conference Room Check was created to visually ease the woes of finding an available conference room.</p>
-            </div>
-            <div class="proj-tech">
-                JavsScript Google App Script GSuite API HTML CSS
-            </div>
-        </div>
-    </div>
-    
-    
-                <div class="border-module">
-        <div class="projContainer">
-            <div class="proj-icons">
-                <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                     <a href="https://github.com/leblanck/Pinwheel" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>
-    <a href="https://pinwheel.dev"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-                <g>
-                    <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-                    <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-                </g>
-                </svg>
-            </a>            
-</div>
-            <div class="proj-text">
-                <h4>Pinwheel</h4>
-                <h6>2019</h6>
-                <p>Pinwheel is a side blog dedicated to macOS enterprise infrastructure created with Hugo and hosted on Firebase.</p>
-            </div>
-            <div class="proj-tech">
-                Hugo Firebase JavaScript HTML CSS
-            </div>
-        </div>
-    </div>
-    
-    
-        <div class="border-module">
-        <div class="projContainer">
-            <div class="proj-icons">
-                <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                
-                <a href="https://github.com/leblanck/ReactResume" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>            
-    <a href="http://kyleblanc.dev/ReactResume/"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-                <g>
-                    <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-                    <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-                </g>
-                </svg>
-            </a>
-
-</div>
-            <div class="proj-text">
-                <h4>React Resume</h4>
-                <h6>2018</h6>
-                
-                <p>An online version of my resume I made for fun. I was interested in learning React.js - I probably didn't need to use React at all, but hey, at least I learned a few things!</p>
-            </div>
-            <div class="proj-tech">
-                React.js CSS HTML Git
-            </div>
-        </div>
-    </div>
-    
-        <div class="border-module">
-        <div class="projContainer">
-            <div class="proj-icons">
-                <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                            <a href="https://github.com/leblanck/TypePear" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>
-    <a href="https://kyleblanc.dev/TypePear/"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-                <g>
-                    <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-                    <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-                </g>
-                </svg>
-            </a>            
-</div>
-            <div class="proj-text">
-                <h4>TypePear</h4>
-                <h6>2017</h6>
-                <p>Type Pear was created as a reference to showcase some of the best, and most popular, font pairings (or 'pearings' if you will) that are available from Google Fonts.</p>
-            </div>
-            <div class="proj-tech">
-                CSS HTML Git Google Fonts
-            </div>
-        </div>
-    </div>
-    
-        <div class="border-module">
-        <div class="projContainer">
-            <div class="proj-icons">
-                <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                            <a href="https://github.com/leblanck/olitoki.github.io" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>
-    <a href="http://olitoki.com"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-                <g>
-                    <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-                    <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-                </g>
-                </svg>
-            </a>            
-
-
-</div>
-            <div class="proj-text">
-                <h4>OliToki</h4>
-                <h6>2015</h6>
-                <p>OliToki is a Korean-Fusion restaurant in the heart of Allston, MA. I was granted the opportunity to have full control over the branding, logo, and website development/design for this establishment. </p>
-            </div>
-            <div class="proj-tech">
-                CSS HTML JavaScript Git
-            </div>
-        </div>
-    </div>
-        
-        
-        <div class="border-module">
-            <div class="projContainer">
-                <div class="proj-icons">
-                    <img class="folder-icon" src="https://img.icons8.com/ios/100/000000/opened-folder.png">
-                                <a href="https://github.com/leblanck/Borrow-HHCC" class="github-icon"><svg class="github-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="35" height="35"
-    viewBox="0 0 32 32"
-    fill="#000"><g id="surface1"><path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path></g></svg></a>
-         <a href="http://borrow.hhcc.com"> 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 55 55" width="30" height="30" xml:space="preserve" class="link-icon">
-        <g>
-            <path d="M51.173,3.801c-5.068-5.068-13.315-5.066-18.384,0l-9.192,9.192c-0.781,0.781-0.781,2.047,0,2.828   c0.781,0.781,2.047,0.781,2.828,0l9.192-9.192c1.691-1.69,3.951-2.622,6.363-2.622c2.413,0,4.673,0.932,6.364,2.623   s2.623,3.951,2.623,6.364c0,2.412-0.932,4.672-2.623,6.363L36.325,31.379c-3.51,3.508-9.219,3.508-12.729,0   c-0.781-0.781-2.047-0.781-2.828,0s-0.781,2.048,0,2.828c2.534,2.534,5.863,3.801,9.192,3.801s6.658-1.267,9.192-3.801   l12.021-12.021c2.447-2.446,3.795-5.711,3.795-9.192C54.968,9.512,53.62,6.248,51.173,3.801z"/>
-            <path d="M27.132,40.57l-7.778,7.778c-1.691,1.691-3.951,2.623-6.364,2.623c-2.412,0-4.673-0.932-6.364-2.623   c-3.509-3.509-3.509-9.219,0-12.728L17.94,24.306c1.691-1.69,3.951-2.622,6.364-2.622c2.412,0,4.672,0.932,6.363,2.622   c0.781,0.781,2.047,0.781,2.828,0s0.781-2.047,0-2.828c-5.067-5.067-13.314-5.068-18.384,0L3.797,32.793   c-2.446,2.446-3.794,5.711-3.794,9.192c0,3.48,1.348,6.745,3.795,9.191c2.446,2.447,5.711,3.795,9.191,3.795   c3.481,0,6.746-1.348,9.192-3.795l7.778-7.778c0.781-0.781,0.781-2.047,0-2.828S27.913,39.789,27.132,40.57z"/>
-        </g>
-        </svg>
-    </a>
-            </div>
-                <div class="proj-text">
-                    <h4>Borrow</h4>
-                    <h6>2014</h6>
-                    <p>Type Pear was created as a reference to showcase some of the best, and most popular, font pairings (or 'pearings' if you will) that are available from Google Fonts.</p>
-                </div>
-                <div class="proj-tech">
-                    JavaScript PHP MySQL HTML CSS
+                <div class="footer-right">
+                    <img src="img/MIM.png" class="footer-image">
                 </div>
             </div>
-        </div>
-    </div>
+        </footer>
 
 
-<!-- FOOTER -->
-            <div class="footer-wrapper">
-                <div class="social-links">
-                    <a href="mailto:hello@kyleblanc.com" class="social-icon">
-                            <svg version="1.1" class="social-icon-logo" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="-150 -75 632 632" width="32px" height="32px" fill="#666" xml:space="preserve">
-                       <g>
-                           <g>
-                               <path d="M424.3,57.75H59.1c-32.6,0-59.1,26.5-59.1,59.1v249.6c0,32.6,26.5,59.1,59.1,59.1h365.1c32.6,0,59.1-26.5,59.1-59.1
-                                   v-249.5C483.4,84.35,456.9,57.75,424.3,57.75z M456.4,366.45c0,17.7-14.4,32.1-32.1,32.1H59.1c-17.7,0-32.1-14.4-32.1-32.1v-249.5
-                                   c0-17.7,14.4-32.1,32.1-32.1h365.1c17.7,0,32.1,14.4,32.1,32.1v249.5H456.4z"/>
-                               <path d="M304.8,238.55l118.2-106c5.5-5,6-13.5,1-19.1c-5-5.5-13.5-6-19.1-1l-163,146.3l-31.8-28.4c-0.1-0.1-0.2-0.2-0.2-0.3
-                                   c-0.7-0.7-1.4-1.3-2.2-1.9L78.3,112.35c-5.6-5-14.1-4.5-19.1,1.1c-5,5.6-4.5,14.1,1.1,19.1l119.6,106.9L60.8,350.95
-                                   c-5.4,5.1-5.7,13.6-0.6,19.1c2.7,2.8,6.3,4.3,9.9,4.3c3.3,0,6.6-1.2,9.2-3.6l120.9-113.1l32.8,29.3c2.6,2.3,5.8,3.4,9,3.4
-                                   c3.2,0,6.5-1.2,9-3.5l33.7-30.2l120.2,114.2c2.6,2.5,6,3.7,9.3,3.7c3.6,0,7.1-1.4,9.8-4.2c5.1-5.4,4.9-14-0.5-19.1L304.8,238.55z"
-                                   />
-                           </g>
-                       </svg>
-                    </a>
-                    <a href="https://github.com/leblanck" class="social-icon">
-                            <svg version="1.1" class="social-icon-logo" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="32px" height="32px" viewBox="-100 -100 712 712" fill="#666"  xml:space="preserve">
-                       <g>
-                           <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.027,408.027
-                               c-19.76,19.759-42.756,35.267-68.354,46.094c-6.502,2.75-13.105,5.164-19.801,7.246V423c0-20.167-6.916-35-20.75-44.5
-                               c8.668-0.833,16.625-2,23.875-3.5s14.918-3.667,23-6.5c8.084-2.833,15.334-6.208,21.75-10.125c6.418-3.917,12.584-9,18.5-15.25
-                               c5.918-6.25,10.875-13.333,14.875-21.25s7.168-17.417,9.5-28.5c2.334-11.083,3.5-23.292,3.5-36.625c0-25.833-8.416-47.833-25.25-66
-                               c7.668-20,6.834-41.75-2.5-65.25l-6.25-0.75c-4.332-0.5-12.125,1.333-23.375,5.5s-23.875,11-37.875,20.5
-                               c-19.832-5.5-40.416-8.25-61.749-8.25c-21.5,0-42,2.75-61.5,8.25c-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8
-                               s-9.167-2.292-13.25-2.625s-6.708-0.417-7.875-0.25s-2,0.333-2.5,0.5c-9.333,23.667-10.167,45.417-2.5,65.25
-                               c-16.833,18.167-25.25,40.167-25.25,66c0,13.333,1.167,25.542,3.5,36.625s5.5,20.583,9.5,28.5s8.958,15,14.875,21.25
-                               s12.083,11.333,18.5,15.25s13.667,7.292,21.75,10.125s15.75,5,23,6.5s15.208,2.667,23.875,3.5c-13.667,9.333-20.5,24.167-20.5,44.5
-                               v39.115c-7.549-2.247-14.99-4.902-22.3-7.994c-25.597-10.827-48.594-26.335-68.353-46.094
-                               c-19.758-19.758-35.267-42.756-46.093-68.354C46.679,313.195,41,285.043,41,256s5.679-57.195,16.879-83.675
-                               c10.827-25.597,26.335-48.594,46.093-68.353c19.758-19.759,42.756-35.267,68.353-46.093C198.805,46.679,226.957,41,256,41
-                               s57.195,5.679,83.676,16.879c25.598,10.827,48.594,26.335,68.354,46.093c19.758,19.758,35.266,42.756,46.092,68.353
-                               C465.32,198.805,471,226.957,471,256s-5.68,57.195-16.879,83.675C443.295,365.271,427.785,388.27,408.027,408.027z"/>
-                       </g>
-                       </svg>
-                    </a>
-                    <a href="https://codepen.io/leblanck/" class="social-icon">
-                            <svg version="1.1" class="social-icon-logo" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="32" height="32" viewBox="-5 -5 40 40" fill="#666" style="enable-background:new 0 0 31.665 31.665;"
-                            xml:space="preserve">
-                       <g>
-                           <path d="M16.878,0.415c-0.854-0.565-1.968-0.552-2.809,0.034L1.485,9.214c-0.671,0.468-1.071,1.233-1.071,2.052v9.444
-                               c0,0.84,0.421,1.623,1.122,2.086l12.79,8.455c0.836,0.553,1.922,0.553,2.758,0l13.044-8.618c0.7-0.463,1.122-1.246,1.122-2.086
-                               v-9.279c0-0.839-0.421-1.622-1.121-2.085L16.878,0.415z M26.621,10.645l-4.821,3.237l-4.521-3.288L17.25,4.127L26.621,10.645z
-                                M13.979,4.133v6.329l-4.633,3.24l-4.621-3.099L13.979,4.133z M3.458,13.722l2.991,2.004l-2.991,2.093V13.722z M14.058,27.215
-                               l-9.331-6.258l4.661-3.258l4.67,3.133V27.215z M12.286,15.674l3.021-2.113l3.519,2.313l-3.119,2.095L12.286,15.674z M17.354,27.215
-                               V20.83l4.463-2.991l4.805,3.159L17.354,27.215z M27.954,17.927l-3.168-2.082l3.168-2.125V17.927z"/>
-                       </g>
-                       </svg>
-                       
-                    </a>
-                    <a href="https://www.linkedin.com/in/leblanck/" class="social-icon">
-                            <svg version="1.1" class="social-icon-logo" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="32" height="32" viewBox="-50 -50 550 550" fill="#666" style="enable-background:new 0 0 32 32;"
-                            xml:space="preserve">
-                       <g>
-                           <path id="LinkedIn__x28_alt_x29_" d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
-                               c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
-                                M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
-                               c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
-                                M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
-                               c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
-                               c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
-                               c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"/>
-                       </g>
-                       </svg>
-                    </a>
-                </div>
-                Designed and built by Kyle LeBlanc &#X1F37B;
-                <span class="code">curl kyleblanc.dev/me/</span>
-                <span class="copy">&copy; 2019</span>
-            </div>
+        <script>
+                var scroll = new SmoothScroll('a[href*="#"]', {
+                    speed: 1500
+                });
+        </script>
+
     </body>
 </html>
-
-
-
-
