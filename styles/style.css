@@ -120,7 +120,7 @@ body  {
 footer {
     min-height: 250px;
     background-color: var(--blue);
-    background-image: url('./topo-light.png');
+    background-image: url('../img/topo-light.png');
     background-repeat: repeat;
     background-size: cover,  auto;
     margin: 0px;
