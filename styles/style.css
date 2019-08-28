@@ -120,7 +120,7 @@ body  {
 footer {
     min-height: 250px;
     background-color: var(--blue);
-    background-image: url('../img/topo-light.png');
+    background-image: url('./topo-light.png');
     background-repeat: repeat;
     background-size: cover,  auto;
     margin: 0px;
@@ -319,7 +319,7 @@ h1 {
     display: flex;
     flex-flow: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .about-lists {
@@ -334,6 +334,26 @@ h1 {
     padding-right: 20px;
 }
 
+.about-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-image-me img {
+    outline:4px solid var(--red);
+    outline-offset:-110px;
+    border:1px solid transparent;
+    border-width:120px 90px 90px 120px;
+    margin:-90px -70px -70px -100px;
+    width: 300px;
+}
 
 .text-link {
 	transition: all 0.4s ease-in-out;
