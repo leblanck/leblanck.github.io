@@ -1,3 +1,3 @@
 # leblanck.github.io
 
-[![Stories in Ready](https://badge.waffle.io/leblanck/leblanck.github.io.png?label=ready&title=Ready)](http://waffle.io/leblanck/leblanck.github.io)
+[![forthebadge](https://forthebadge.com/images/badges/approved-by-george-costanza.svg)](https://forthebadge.com)
